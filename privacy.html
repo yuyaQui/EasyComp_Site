@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="EasyComp プライバシーポリシー - Chrome拡張機能「EasyComp」のデータ取り扱いについて">
+    <title>プライバシーポリシー - EasyComp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ===== Header ===== -->
+    <header class="site-header" id="header">
+        <div class="header-inner">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">E</span>
+                EasyComp
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">ホーム</a></li>
+                    <li><a href="terms.html">利用規約</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ===== Content ===== -->
+    <main class="legal-page">
+        <div class="legal-container">
+            <a href="index.html" class="back-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <line x1="19" y1="12" x2="5" y2="12" />
+                    <polyline points="12 19 5 12 12 5" />
+                </svg>
+                ホームに戻る
+            </a>
+            <div class="legal-header">
+                <h1>プライバシーポリシー</h1>
+                <p class="last-updated">最終更新日: 2026年4月1日</p>
+            </div>
+            <div class="legal-content">
+
+                <h2>1. はじめに</h2>
+                <p>
+                    本プライバシーポリシーは、Chrome拡張機能「EasyComp」（以下「本拡張機能」）がユーザーデータをどのように取り扱うかを説明するものです。本拡張機能は
+                    zate1359（以下「開発者」）によって開発されました。
+                </p>
+
+                <h2>2. データの収集と使用</h2>
+                <p>
+                    本拡張機能は、ユーザーのブラウザから直接Googleサービスに接続します。開発者は、ユーザーの個人データやクイズの内容を外部サーバーに収集、保存、または共有することはありません。
+                </p>
+                <p>
+                    <strong>ユーザー入力データ：</strong>ユーザーが入力したクイズの問題、解答、補足情報、およびスプレッドシートのURLは、ユーザーが指定したスプレッドシートに追加するために、Google
+                    Sheets APIへ直接送信されます。このデータが開発者に送信されることはありません。
+                </p>
+                <p>
+                    <strong>Googleアカウント情報：</strong>本拡張機能は、ユーザーのGoogleアカウントで認証を行うためにOAuth 2.0を使用します。取得されたアクセストークンは、Google
+                    Sheets APIとの通信のみに使用され、ユーザーのブラウザ内にローカルに保存されます。
+                </p>
+
+                <h2>3. 権限</h2>
+                <p>本拡張機能が機能するためには、以下の権限が必要です。</p>
+                <ul>
+                    <li><strong>identity（本人確認）：</strong>ユーザーを認証し、Google Sheets API用のアクセストークンを取得するために使用します。</li>
+                    <li><strong>storage（ストレージ）：</strong>ユーザーの利便性向上のため、ユーザーが指定したクイズやスプレッドシートのデータをローカルに保存するために使用します。</li>
+                    <li><strong>host_permissions (https://sheets.googleapis.com/)：</strong>Google Sheets
+                        APIにデータを直接送信するために使用します。</li>
+                </ul>
+
+                <h2>4. データの共有</h2>
+                <p>
+                    本拡張機能は、上記で説明したGoogle APIサービスとの必要な通信を除き、ユーザーデータを第三者と共有することはありません。
+                </p>
+
+                <h2>5. お問い合わせ</h2>
+                <p>
+                    本プライバシーポリシーに関するご質問は、以下までお問い合わせください。<br>
+                    <a href="mailto:zate1359@gmail.com">zate1359@gmail.com</a>
+                </p>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- ===== Footer ===== -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <p class="footer-copy">&copy; 2026 EasyComp. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="privacy.html">プライバシーポリシー</a></li>
+                <li><a href="terms.html">利用規約</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            header.classList.toggle('scrolled', window.scrollY > 10);
+        });
+    </script>
+
+</body>
+
+</html>

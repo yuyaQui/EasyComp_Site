@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="EasyComp 利用規約 - Chrome拡張機能「EasyComp」の利用条件">
+    <title>利用規約 - EasyComp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ===== Header ===== -->
+    <header class="site-header" id="header">
+        <div class="header-inner">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">E</span>
+                EasyComp
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">ホーム</a></li>
+                    <li><a href="privacy.html">プライバシーポリシー</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ===== Content ===== -->
+    <main class="legal-page">
+        <div class="legal-container">
+            <a href="index.html" class="back-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <line x1="19" y1="12" x2="5" y2="12" />
+                    <polyline points="12 19 5 12 12 5" />
+                </svg>
+                ホームに戻る
+            </a>
+            <div class="legal-header">
+                <h1>利用規約</h1>
+                <p class="last-updated">最終更新日: 2026年4月1日</p>
+            </div>
+            <div class="legal-content">
+
+                <h2>1. はじめに</h2>
+                <p>
+                    本利用規約（以下「本規約」といいます）は、zate1359@gmail.comが提供するChrome拡張機能「EasyComp」（以下「本アプリ」といいます）の利用条件を定めるものです。ユーザーは、本アプリを利用することにより、本規約に同意したものとみなされます。
+                </p>
+
+                <h2>2. 免責事項</h2>
+                <p>
+                    本アプリは「現状有姿」で提供されます。開発者は、本アプリの動作保証、特定目的への適合性、バグの不存在などを保証しません。
+                </p>
+                <p>
+                    また、本アプリの利用によりユーザーのスプレッドシートのデータが消失・破損した場合や、その他の損害が発生した場合でも、開発者は一切の責任を負わないものとします。
+                </p>
+
+                <h2>3. 禁止事項</h2>
+                <p>ユーザーは、本アプリの利用にあたり、以下の行為を行ってはなりません。</p>
+                <ul>
+                    <li>法令または公序良俗に違反する行為</li>
+                    <li>本アプリのサーバーやネットワークシステムに支障を与える行為</li>
+                    <li>本アプリのソースコードをリバースエンジニアリング、逆コンパイルする行為</li>
+                </ul>
+
+                <h2>4. 規約の変更</h2>
+                <p>
+                    開発者は、必要と判断した場合には、ユーザーに通知することなくいつでも本規約を変更することができるものとします。
+                </p>
+
+                <h2>5. 準拠法・裁判管轄</h2>
+                <p>
+                    本規約の解釈にあたっては、日本法を準拠法とします。本アプリに関して紛争が生じた場合には、東京地方裁判所または東京簡易裁判所を第一審の専属的合意管轄裁判所とします。
+                </p>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- ===== Footer ===== -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <p class="footer-copy">&copy; 2026 EasyComp. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="privacy.html">プライバシーポリシー</a></li>
+                <li><a href="terms.html">利用規約</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            header.classList.toggle('scrolled', window.scrollY > 10);
+        });
+    </script>
+
+</body>
+
+</html>
